@@ -51,6 +51,6 @@ Route::resource('admin/post',PostController::class);
 Route::get('/admin/setting',[SettingController::class,'index']);
 Route::post('/admin/setting',[SettingController::class,'save_settings']);
 
-Auth::routes();
+// Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

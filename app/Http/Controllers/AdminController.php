@@ -31,7 +31,7 @@ class AdminController extends Controller
     		return redirect('admin/login')->with('error','Invalid username/password!!');
     	}
 
-    }
+     }
     // Dashboard
     function dashboard(){
         $posts=Post::orderBy('id','desc')->get();
